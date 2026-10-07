@@ -1,9 +1,10 @@
 # Agentic AI Payroll Explainer Bot
 
-AI-powered multi-agent payroll assistant for Employees. Built with FastAPI, React, and Groq (Llama 3.3 70B).
 ![Agentic AI Payroll Explainer Bot Banner](Banner.png)
 
 ## Architecture
+
+![Agentic AI Payroll Explainer Bot Architecure](Architecture.png)
 
 - **Orchestrator** — Keyword-based intent scoring, then routes to one specialist (see `agents/agentic/registry.py`)
 - **Payroll Calculator** — Salary breakdowns, CTC computation, payslip generation
@@ -11,8 +12,6 @@ AI-powered multi-agent payroll assistant for Employees. Built with FastAPI, Reac
 - **Policy Explainer** — RAG-based answers from HR policy documents
 - **Dispute Resolver** — Payslip discrepancy handling, ticket creation, escalation
 - **General Assistant** — Fallback when intent is `general`
-![Agentic AI Payroll Explainer Bot Architecure](Architecture.png)
-
 
 ### AI agent framework (LangChain + LangGraph)
 
